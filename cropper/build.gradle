@@ -25,6 +25,21 @@ android {
     }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            pom {
+                scm {
+                    connection = 'scm:https://github.com/lucienkerl/Android-Image-Cropper.git'
+                    developerConnection = 'scm:https://github.com/lucienkerl/Android-Image-Cropper.git'
+                    url = 'https://github.com/lucienkerl/Android-Image-Cropper.git'
+                }
+            }
+        }
+    }
+}
+
+
 dependencies {
     api "androidx.appcompat:appcompat:$androidXAppCompatVersion"
     implementation "androidx.exifinterface:exifinterface:$androidXExifVersion"
