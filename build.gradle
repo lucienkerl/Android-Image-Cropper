@@ -13,19 +13,6 @@ buildscript {
     }
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            pom {
-                scm {
-                    connection = 'scm:https://github.com/lucienkerl/Android-Image-Cropper.git'
-                    developerConnection = 'scm:https://github.com/lucienkerl/Android-Image-Cropper.git'
-                    url = 'https://github.com/lucienkerl/Android-Image-Cropper.git'
-                }
-            }
-        }
-    }
-}
 
 subprojects {
     apply plugin: "org.jlleitschuh.gradle.ktlint"
