@@ -16,9 +16,16 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.CanHub'
+                groupId = 'com.github.lucienkerl'
                 artifactId = 'Android-Image-Cropper'
                 version = rootProject.libVersion
+                pom {
+                    scm {
+                        connection = 'https://github.com/lucienkerl/Android-Image-Cropper.git'
+                        developerConnection = 'https://github.com/lucienkerl/Android-Image-Cropper.git'
+                        url = 'https://github.com/lucienkerl/Android-Image-Cropper.git'
+                    }
+                }
             }
         }
     }
